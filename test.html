@@ -1,0 +1,59 @@
+<!-- ----------------------------------------------------
+ * Author			: crazymad
+ * Last modified	: 2016-10-23 21:49
+ * Filename			: test.html
+ * Description		: 
+ ----------------------------------------------------- -->
+
+<html>
+<meta content="text/html; charset=utf-8" />
+<title>titile</title>
+
+<script src="jquery.js"></script>
+<script>
+$(function(){
+	$("#sub").click(function(){
+		var name_ = $("#id").val();
+		var passwd_ = $("#psd").val();
+		//alert(name_);
+		//alert(passwd_);
+		$.ajax({
+			url : "login.php",
+			type : "POST",
+			data : {
+				name : name_,
+				passwd : passwd_
+			},
+			error : function (
+				XMLHttpRequest,
+				textStatus,	
+				errorThrown
+				) {
+				alert("连接失败");
+			},
+			success : function(data) {
+				alert(data);
+				/*if (data == 'test')
+					alert("test");
+				var result = data;
+				alert(result);*/
+			}			
+		});
+		return false;
+	})
+})
+
+</script>
+
+<head>
+</head>
+
+<body>
+账号:<input id="id" type="text" /> <br/>
+<div style="height: 10px; width: 100%;"></div>
+密码:<input id="psd" type="password" />
+<div style="height: 10px; width: 100%;"></div>
+<input id="sub" type="submit" value="登录" />
+</body>
+</html>
+
