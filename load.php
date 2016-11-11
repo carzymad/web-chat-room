@@ -1,6 +1,6 @@
 <?php
 //<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-$icon = mysql_connect("127.0.0.1", "root", "r13858251304");
+$icon = mysql_connect("127.0.0.1", "root", "****************");
 if (!$icon) {
 	die("Could not connect: " . mysql_error());
 }

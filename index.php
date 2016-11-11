@@ -19,13 +19,15 @@
 <link rel="shortcut con" href="chat.ico">
 </head>
 
-<script src="jquery.js"></script>
-<script src="chat.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/chat.js"></script>
 <link rel="stylesheet" type="text/css" href="model.css" />
 
 <body>
 
-<h2 id="welcome">欢迎<?php session_start(); echo "<a href=\"#\" id=\"change-account\">" . $_SESSION['name'] . "</a>"; ?>来到聊天室</h2>
+<h2 id="welcome">
+欢迎<a href="#" id="change-account"><?php session_start(); echo $_SESSION['name']; ?></a>来到聊天室
+</h2>
 
 <div>
 <div style="width: 30%;">
@@ -48,6 +50,7 @@
 </div>
 
 <div class="model-overlay">
+</div>
 <div class="model-data" style="" id="div-login" >
 	<div id="login">
 	账号:<input id="id" type="text" /> <br/>
@@ -65,7 +68,6 @@
 	<input id="sub-2" type="submit" value="注册" /> <br />
 	<a id="change-login" href="#" style="cursor: pointer; font-size:12px;">登录已有账号</a>
 	</div>
-</div>
 </div>
 
 </body>

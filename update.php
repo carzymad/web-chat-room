@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_POST['input'] != '' && $_SESSION['login'] == true) {
-	$icon = mysql_connect('127.0.0.1', 'root', 'r13858251304');
+	$icon = mysql_connect('127.0.0.1', 'root', '*************');
 	mysql_query('use website', $icon);
 	//echo $_POST['input'];
 	mysql_query("set names 'utf8'", $icon);

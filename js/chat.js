@@ -112,7 +112,9 @@ $(function(){
 					$(".model-overlay").hide();
 					$(".model-data").hide();
 					$("#input-submit").val("提交");
-					$("#welcome").html("欢迎<a href='#' id='change-account'>" + name_ + "</a>来到聊天室");
+					$("#change-account").html(name_);
+					$("#id").val("");
+					$("#psd").val("");
 				} else {
 					$(".model-overlay").hide();
 					$(".model-data").hide();
@@ -149,6 +151,8 @@ $(function(){
 			},
 			success : function(data) {
 				alert(data);
+				$("#register").hide();
+				$("#login").show();
 				/*var line = "";
 				line = data;
 				if (line == "success\n") {
