@@ -6,3 +6,5 @@
 mysql-5.7的配置可能有点麻烦，我把我之前写的安装mysql-5.7教程和设置中文教程的博客贴在这里 <br />
 <a href="http://blog.csdn.net/qq_32685139/article/details/52558309">CentOS7.2安装mysql-5.7</a> <br />
 <a href="http://blog.csdn.net/qq_32685139/article/details/52893828">PHP+MYSQL 中文乱码问题</a> <br />
+
+个人邮箱：crazy_mad01@163.com
