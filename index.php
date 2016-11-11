@@ -21,7 +21,7 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/chat.js"></script>
-<link rel="stylesheet" type="text/css" href="model.css" />
+<link rel="stylesheet" type="text/css" href="css/model.css" />
 
 <body>
 
