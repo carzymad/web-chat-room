@@ -8,4 +8,7 @@ mysql-5.7的配置可能有点麻烦，我把我之前写的安装mysql-5.7教�
 <a href="http://blog.csdn.net/qq_32685139/article/details/52893828">PHP+MYSQL 中文乱码问题</a> <br />
 我在里面放了一个mysql的数据库，有兴趣的小伙伴可以直接把这个数据库导入mysql中
 
+## 公告
+我将聊天室整合到我的博客系统里面了，这里以后应该不会再更新了。
+
 个人邮箱：crazy_mad01@163.com
